@@ -1,0 +1,255 @@
+
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Julius+Sans+One|Rajdhani');
+.enter{
+  margin: 0;
+  /*padding: 30px;*/
+
+
+}
+/*.welcome{display: flex;
+  flex-direction: column;
+}*/
+.welcome{
+  width: 100vw;
+  -webkit-animation: moveToTop .6s ease both;
+	animation: moveToTop .6s ease both;
+}
+.production{
+/*margin-left: auto;
+margin-right: auto;
+width: auto;
+height: auto;*/
+position: relative;
+   top: 35%;
+   left: 50%;
+   width: 828px;
+   height: 500px;
+   margin-top: -20px; /* Half the height */
+   margin-left: -414px; /* Half the width */
+    /*transform: scale(0.3,0.3);*/
+}
+.message{
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 24px;
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.idol{
+background-image: url("img/enter22.png");
+position: relative;
+top:50%;
+left: 50%;
+width: 924px;
+height:175px;
+margin-top: -10px;
+margin-left: -462px;
+background-size: cover;
+
+/*visibility: hidden;*/
+}
+
+/*page1*/
+audio{
+  display: none;
+}
+
+
+
+
+.card{
+  /*position: relative;*/
+  background-image: url("img/CARD.png");
+  background-size: cover;
+  width: 500px;
+  height: 302px;
+  /*left: 50%;
+  margin-left: -250px;
+  top:50%;
+  margin-top: -10px;*/
+  display: none;
+}
+
+.content,
+.business{
+  text-align: center;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 24px;
+}
+
+.nav{
+position: fixed;
+width: 100vw;
+height: 28px;
+list-style-type: none;
+  margin:0;
+  padding: 0;
+  top: 0;
+    right: 0;
+  overflow: hidden;
+background-color: white;
+}
+li{
+
+  display: inline;
+  font-family:"Archivo Black", sans-serif;
+ font-size: 24px;
+
+  padding: 0px 16px;
+}
+li a{
+  text-decoration: none;
+  color:#151515;
+}
+li  :hover{
+  color:#B40431;
+
+}
+
+.building{
+margin: 40px;
+/*padding-top: 30px;*/
+display: flex;
+flex-direction: row;
+background-color: #2ECCFA;
+margin-top:150px;
+margin-bottom:150px;
+justify-content: space-between;
+}
+.tour {
+
+  font-family: "Archivo Black", sans-serif;
+  font-size: 72px;
+text-align: right;
+color:white;
+padding-right: 30px;
+padding-left: 150px;
+/*padding-top: 500px;*/
+/*margin-top: 200px;*/
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.division{
+  width: 1600px;
+  height: 200px;
+  background-color: white;
+  font-size: 24px;
+  /*font-family: 'MS PGothic', Osaka, Arial, sans-serif;*/
+  color:#424242;
+  padding-top: 150px;
+  text-align: center;
+  background-image: url(img/loading.png);
+background-position: right;
+background-size: contain;
+background-repeat: no-repeat;
+
+}
+#diary,
+#makoto,
+#lessontalk,
+#lessontalk2,
+#lessontalk3,
+#lessontalk4,
+#lessontalk5,
+#lessontalk6{
+  margin-top: 200px;
+  margin-bottom: 200px;
+  margin-right: 200px;
+  margin-left: 300px;
+  /*width: 70vw;*/
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+}
+.content{
+  padding-top: 30px;
+  height: auto;
+  /*overflow-y: scroll;*/
+  /*border: 7px;
+  border-style: solid;
+  border-color: #088A29;
+  border-radius: 15px;*/
+}
+.smile{
+  width: 540px;
+  height: 304px;
+  background-image: url(img/makotosmile.gif);
+  background-size: cover;
+  /*background-position: top;*/
+  background-repeat: no-repeat;
+}
+.one{
+  background-image: url(img/studio.jpg);
+}
+.two{
+  background-image: url(img/shooting.jpg);
+}
+.three{
+  background-image: url(img/bookstore.jpg);
+}
+.one,
+.two,
+.three{
+  width:1455px;
+  height:400px;
+  margin-right: 200px;
+  margin-left:200px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  background-size: cover;
+  color:#424242;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 60px;
+  text-align: right;
+  padding:10px;
+}
+
+iframe{
+margin-top: 150px;
+margin-bottom: 100px;
+}
+
+
+.call{
+  display: none;
+}
+.call img{
+  vertical-align: middle;
+}
+
+#poster{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+/*.front{
+  width: 600px;
+  height: 750px;
+  background-color: grey;
+}*/
+.back{
+  max-width: 100%;
+  width: 600px;
+  height: 750px;
+  display: none;
+
+}
+.big{
+  width: 500px;
+  height:281px;
+  background-image: url(img/manga2.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+/*.everyone:hover{
+  color:rgba(255, 255, 255, 0);
+background-image: url(img/everyone.gif);
+background-size: cover;}

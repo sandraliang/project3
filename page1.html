@@ -19,8 +19,29 @@
     </script>
 
 
-    <script src="script2.js"></script>
-
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        var queryString = new Array();
+        $(function () {
+            if (queryString.length == 0) {
+                if (window.location.search.split('?').length > 1) {
+                    var params = window.location.search.split('?')[1].split('&');
+                    for (var i = 0; i < params.length; i++) {
+                        var key = params[i].split('=')[0];
+                        var value = decodeURIComponent(params[i].split('=')[1]);
+                        queryString[key] = value;
+                    }
+                }
+            }
+            if (queryString["name"] != null /*&& queryString["technology"] != null*/) {
+                var data = "<u>Values from QueryString</u><br /><br />";
+                /*data += "<b>Name:</b> " + queryString["name"] + " <b>Technology:</b> " + queryString["technology"];
+                $("#lblData").html(data);*/
+                $(".namae").append(queryString["name"]);
+                $("#lblData").html(data);
+            }
+        });
+    </script>
 </head>
 <body>
   <ul class="nav">
@@ -47,7 +68,7 @@
   </audio>
   <div> <img class="intro"src="img/intro.gif"></div>
   <section class="content">
-  <div class="intro">Good morning! I am the producer of 765 production.</div>
+  <div class="intro">Good morning!<span class="namae"></span> p. I am the producer of 765 production.</div>
   <div class="business"><br><br>click me</div>
   <div class="card"></div>
   <p>Today,we are going to work with Makoto,a 765 idol to understand the workflow of a 765 producer.Are You Ready?<br>
@@ -59,7 +80,7 @@
 <section id="makoto">
 
   <section class="content">
-  Hi producer! Nice to meet you,I am Kikuchi Makoto. Let's do our best today!<br><br>
+  Hi <span class="namae"></span> p! Nice to meet you,I am Kikuchi Makoto. Let's do our best today!<br><br>
   <a href="#Morning"><span>Next</span></a>
   </section>
   <div class="smile"> </div>
@@ -89,7 +110,7 @@ Refreshing!It's important to keep hydrated after sports.Umm...?
 <section id="lessontalk2">
   <div> <img class="photo"src="img/photoshoot.gif"></div>
   <section class="content">
-  Is this pose alright? Or should I do something more dynamic?
+  Is this pose alright <span class="name"></span>p? Or should I do something more dynamic?
   <div class="pose"><br>click</div>
   <a href="#lessontalk3"><span>Next</span></a>
 </section>
@@ -157,7 +178,7 @@ Refreshing!It's important to keep hydrated after sports.Umm...?
 
 
 <section id="Comment" class="business">
-How's the tour today? If you are interested in joining us, please click <a href="page2.html">HERE</a>. We are waiting for you.
+How's the tour today <span class="namae"></span> p? If you are interested in joining us, please click <a href="page2.html">HERE</a>. We are waiting for you.
 </section>
 </body>
 </html>

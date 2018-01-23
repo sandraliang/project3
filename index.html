@@ -36,7 +36,18 @@
         <a href="page1.html"><img class="production" src="img/enter.jpg"></a>
       </div>
       <div class="message">
-        Good morning,producer.
+        Good morning,producer.Please tell me your name.<br>
+        <input type="text" id="txtName" name="Name" value="Your Name"><br>
+        <input type="button" id="btnQueryString" value="Enter" />
+    <script type="text/javascript">
+        $(function () {
+            $("#btnQueryString").bind("click", function () {
+                var url = "page1.html?name=" + encodeURIComponent($("#txtName").val()) ;
+                window.location.href = url;
+            });
+        });
+    </script>
+        <!--<a href="page1.html"><div id="button">Enter</div></a>-->
 
       </div>
       <div class="idol"></div>

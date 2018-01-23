@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $( ".business" ).click(function() {
+/*  $( ".business" ).click(function() {
     $( ".card" ).slideToggle( "slow", function() {
       // Animation complete.
     });
@@ -38,7 +38,7 @@ $(document).ready(function(){
     function(){
     $(".photo").attr("src","img/photoshoot.gif");}
   );*/
-function handler1() {
+/*function handler1() {
     $(".photo").attr(
       "src","img/photoshoot.gif");
     $(this).one("click", handler2);}
